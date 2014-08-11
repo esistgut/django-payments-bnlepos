@@ -1,8 +1,11 @@
 django-payments-bnlepos
 =======================
 
-A django-payments backend for the BNL POSitivity (BNP Paribas) e-POSitivity virtual POS payment gateway.
+A django-payments backend for the BNL POSitivity (BNP Paribas) e-POSitivity Connect virtual POS payment gateway.
 
+Reference documentation (in italian language) can be found at the following addresses:
+http://www.bnlpositivity.it/it/soluzioni-pagamento/pos-virtuale-connect.html
+http://www.bnlpositivity.it/shared/allegati-pubblici/Manuale_Connect_2.6_per_il_sito.pdf
 
 
 Parameters
