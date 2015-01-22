@@ -40,9 +40,9 @@ class BNLePOSProvider(BasicProvider):
             'chargetotal': chargetotal,
             'oid': self.payment.token,
             'currency': self.currency,
-            'language': 'en',
-            'responseSuccessURL': '%s' % urljoin(settings.PAYMENT_BASE_URL, self.get_return_url()),
-            'responseFailURL': '%s' % urljoin(settings.PAYMENT_BASE_URL, self.get_return_url()),
+            'language': 'en_GB',
+            'responseSuccessURL': '%s' % self.get_return_url(),
+            'responseFailURL': '%s' % self.get_return_url(),
         }
         return data
 
@@ -55,4 +55,3 @@ class BNLePOSProvider(BasicProvider):
             self.payment.change_status('confirmed')
             return redirect(self.payment.get_success_url())
         return redirect(self.payment.get_failure_url())
-
